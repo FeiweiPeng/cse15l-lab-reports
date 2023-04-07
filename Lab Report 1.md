@@ -10,3 +10,4 @@
   Now you have connected to a remote server successfully, so you can try some commands in the terminal. Try to use commands such as "cd", "ls", and "cat" to access and print the files in the remote server. Different combinations of commands may produce different effects. For example, the output could look like this:
   ![Image](commands.jpg)
   
+Overall, learning remotely connecting is a really useful and fun process.
