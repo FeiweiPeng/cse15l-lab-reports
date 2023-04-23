@@ -63,3 +63,4 @@ class StringServer {
 - The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
 - 1. Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";
   2. Values of any relevant fields of the class: result: result = "apple"; parameters: parameters = {"s", "apple"};
+- Values of fields changed: result: changes from result = "" to result = "apple"; parameters: changes from parameters = {} to parameters ={"s", "apple"}; 
