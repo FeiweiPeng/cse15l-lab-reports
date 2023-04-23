@@ -6,15 +6,13 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
     String result = "";
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return result;
         } 
-        else if (url.getPath().contains("/add-message")) {
+        else if (url.getPath().equals("/add-message")) {
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s") == true){
                 if(result.length() == 0){result = result + parameters[1];}
@@ -23,7 +21,7 @@ class Handler implements URLHandler {
             }
             else{return "404 Not Found!";}
         } 
-        else if(url.getPath().contains("/search")){
+        else if(url.getPath().equals("/search")){
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s") == true){
                 String searched = "";
@@ -59,3 +57,9 @@ class StringServer {
     }
 }
 ```
+**Using /add-message**
+    Add a string "apple":
+    ![Image](add1.jpg)
+- The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
+- 1. Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";
+  2. Values of any relevant fields of the class: result: result = "apple"; parameters: parameters = {"s", "apple"};
