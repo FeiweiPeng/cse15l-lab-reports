@@ -92,7 +92,7 @@ Take the `reverseInPlace(int[] arr)` method in ArrayExamples.java as an example.
 ```
 - Symptom
     ![Image](symptom.jpg)
-- Bug
+- Bug<br />
 **Before**
 ```
   static void reverseInPlace(int[] arr) {
@@ -101,7 +101,7 @@ Take the `reverseInPlace(int[] arr)` method in ArrayExamples.java as an example.
     }
   }
 ```
-**After**
+  **After**
 ```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) { 
@@ -113,5 +113,5 @@ Take the `reverseInPlace(int[] arr)` method in ArrayExamples.java as an example.
 ```
 The fix flips the elements simultaneously and makes sure that the original element is not lost due to the element change.
 ## Part 3
-I learned how to use the server to build a search engine, and run the server on a remote computer in week 2 lab.
+I learned how to use the server to build a search engine, and run the server on a remote computer in week 2 lab.<br />
 I learned how to debug through the symptoms and JUnit tests in week 3 lab.
