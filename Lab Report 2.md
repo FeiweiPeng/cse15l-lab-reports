@@ -93,6 +93,7 @@ Take the `reverseInPlace(int[] arr)` method in ArrayExamples.java as an example.
 - Symptom
     ![Image](symptom.jpg)
 - Bug<br />
+
 **Before**
 ```
   static void reverseInPlace(int[] arr) {
@@ -101,7 +102,7 @@ Take the `reverseInPlace(int[] arr)` method in ArrayExamples.java as an example.
     }
   }
 ```
-  **After**
+**After**
 ```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) { 
