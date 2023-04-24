@@ -58,18 +58,19 @@ class StringServer {
 }
 ```
 **Using /add-message**
-1. Add a string "apple":
+
+- Add a string "apple":
     ![Image](add1.jpg)
-- The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
-- 1. Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";
-  2. Values of any relevant fields of the class: result: `result = "apple"`; parameters: `parameters = {"s", "apple"}`;
-- Values of fields changed: result: changed from `result = ""` to `result = "apple"`; parameters: changed from `parameters = {}` to `parameters ={"s", "apple"}`; 
-2. Add a string "hello":
+1. The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
+2. 1. Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";
+   2. Values of any relevant fields of the class: result: `result = "apple"`; parameters: `parameters = {"s", "apple"}`;
+3. Values of fields changed: result: changed from `result = ""` to `result = "apple"`; parameters: changed from `parameters = {}` to `parameters ={"s", "apple"}`; 
+- Add a string "hello":
     ![Image](add2.jpg)
-- The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
-- 1. Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";
-  2. Values of any relevant fields of the class: result: `result = "apple\nhello"`; parameters: `parameters = {"s", "hello"}`;
-- Values of fields changed: result: changed from `result = "apple"` to `result = "apple\nhello"`; parameters: changed from `parameters = {}` to `parameters ={"s", "hello"}`; 
+1. The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
+2. 1. Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";
+   2. Values of any relevant fields of the class: result: `result = "apple\nhello"`; parameters: `parameters = {"s", "hello"}`;
+3. Values of fields changed: result: changed from `result = "apple"` to `result = "apple\nhello"`; parameters: changed from `parameters = {}` to `parameters ={"s", "hello"}`; 
 ## Part 2: Bugs
 Take the `reverseInPlace(int[] arr)` method in ArrayExamples.java as an example.
 - Failure-inducing input: `int[] intlist2 = {1, 2, 3}`
