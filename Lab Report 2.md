@@ -61,7 +61,7 @@ class StringServer {
 
 Add a string "apple":
     ![Image](add1.jpg)
-- The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length(). The getPath() method obtains the path of the URL, and compares the path with "/add-message". If they are equal, the program executes the following lines. URL's query is obtained by getQuery(), then the query is seperated by split("=") to examine if the character before "=" which is assigned to "parameters[0]" is "s". The string after "=" which is assigned to "parameters[1]" in the query is the string to be added, so it is added to the result.
+- The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length(). The getPath() method obtains the path of the URL, and compares the path with "/add-message". If they are equal, the program executes the following lines. URL's query is obtained by getQuery(), then the query is separated by split("=") to examine if the character before "=" which is assigned to "parameters[0]" is "s". The string after "=" which is assigned to "parameters[1]" in the query is the string to be added, so it is added to the result.
 - a.Relevant arguments to those methods: handleRequest(): URL, take in the URL entered ; equals(): "/", "/add-message", "s", distinguish different paths and examine the input; split(): "=", split by "=" to obtain the characters before and after it;<br />
   b.Values of any relevant fields of the class: result: `result = "apple"`; parameters: `parameters = {"s", "apple"}`;
 - Values of fields changed: result: changed from `result = ""` to `result = "apple"`; parameters: changed from `parameters = {}` to `parameters ={"s", "apple"}`; 
@@ -69,7 +69,7 @@ Add a string "apple":
 Add a string "hello":
     ![Image](add2.jpg)
 - The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
-- a.Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";<br />
+- a.Relevant arguments to those methods: handleRequest(): URL, take in the URL entered ; equals(): "/", "/add-message", "s", distinguish different paths and examine the input; split(): "=", split by "=" to obtain the characters before and after it;<br />
   b.Values of any relevant fields of the class: result: `result = "apple\nhello"`; parameters: `parameters = {"s", "hello"}`;
 - Values of fields changed: result: changed from `result = "apple"` to `result = "apple\nhello"`; parameters: changed from `parameters = {}` to `parameters ={"s", "hello"}`; 
 ## Part 2: Bugs
