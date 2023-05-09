@@ -61,8 +61,8 @@ class StringServer {
 
 Add a string "apple":
     ![Image](add1.jpg)
-- The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length()
-- a.Relevant arguments to those methods: handleRequest(): URL ; equals(): "/", "/add-message", "s"; split(): "=";<br />
+- The methods called: handleRequest(), getPath(), getQuery(), split(), equals(), length(). The getPath() method obtains the path of the URL, and compares the path with "/add-message". If they are equal, the program executes the following lines. URL's query is obtained by getQuery(), then the query is seperated by split("=") to examine if the character before "=" which is assigned to "parameters[0]" is "s". The string after "=" which is assigned to "parameters[1]" in the query is the string to be added, so it is added to the result.
+- a.Relevant arguments to those methods: handleRequest(): URL, take in the URL entered ; equals(): "/", "/add-message", "s", distinguish different paths and examine the input; split(): "=", split by "=" to obtain the characters before and after it;<br />
   b.Values of any relevant fields of the class: result: `result = "apple"`; parameters: `parameters = {"s", "apple"}`;
 - Values of fields changed: result: changed from `result = ""` to `result = "apple"`; parameters: changed from `parameters = {}` to `parameters ={"s", "apple"}`; 
 
@@ -114,7 +114,7 @@ Take the `reverseInPlace(int[] arr)` method in ArrayExamples.java as an example.
     }
   }
 ```
-The fix flips the elements simultaneously and makes sure that the original element is not lost due to the element change.
+The bug here is that the elements at the beginning of the array will be modified and their original data will be lost, so the elements at the end of the array are not correctly reversed. By testing with an array with 3 different integers, the failure occurs, saying the the element at index 2 is not reversed. Then I simulate the process, writing out the value at the indexes after each iteration and found out that the element at index 0 is already changed to the value at index 2, so when java is assigning value at index 2 to be the value at index 0, the arr[2] is not changed. Thus, I made the method flips the elements simultaneously and makes sure that the original element is not lost due to the element change.
 ## Part 3
 I learned how to use the server to build a search engine, and run the server on a remote computer in week 2 lab.<br />
 I learned how to debug through the symptoms and JUnit tests in week 3 lab.
