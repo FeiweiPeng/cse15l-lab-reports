@@ -66,6 +66,40 @@ $ find ./technical/biomed/ -name "1468*.txt" -o -name "rr1*.txt"
 ./technical/biomed//1468-6708-3-1.txt
 ```
 Sometimes we may want to find files with several names. This option can find files that satisfy any of the multiple requirements. For this one, we are finding the txt files that start with "1468..." or "rr1..." under ./technical/biomed/ directory. <br /> Source: https://www.computerhope.com/unix/ufind.htm. <br />
+2.Second Example <br />
+The command and output are as follows: <br />
+```
+$ find ./technical/911report/  -name "chapter-1*.txt" > 911.txt
+$ find . -name "911.txt" -o -name "Session*.txt"
+./technical/government/Alcohol_Problems/Session2-PDF.txt
+./technical/government/Alcohol_Problems/Session3-PDF.txt
+./technical/government/Alcohol_Problems/Session4-PDF.txt
+./911.txt
+```
+First, we created a txt file called "911.txt". Then, we want to find the "911.txt" file and all the files start with "Session..." under current directory. This command can match files with several names at the same time. <br /> Source: https://www.computerhope.com/unix/ufind.htm. <br />
+** -type ** <br />
+1.First Example <br />
+The command and output are as follows: <br />
+``` 
+$ find ./technical/government/ -type d
+./technical/government/
+./technical/government//About_LSC
+./technical/government//Env_Prot_Agen
+./technical/government//Alcohol_Problems
+./technical/government//Gen_Account_Office
+./technical/government//Post_Rate_Comm
+./technical/government//Media
+```
+This command prints out all the directories in or under ./technical/government/ directory. It is useful when we want to know what directories are under a specified directory. <br /> Source: https://www.computerhope.com/unix/ufind.htm. <br />
+2.Second Example <br />
+The command and output are as follows: <br />
+```
+$ find ./technical/government/Gen_Account_Office/ -name "ai*.txt" -type f
+./technical/government/Gen_Account_Office//ai00134.txt
+./technical/government/Gen_Account_Office//ai9868.txt
+./technical/government/Gen_Account_Office//ai2132.txt
+```
+This command prints out all the files in or under the ./technical/government/Gen_Account_Office/ directory and with names start with "ai...", without showing non-regular file types. This can be used when we only want regular files under specified directory. <br /> Source: https://www.computerhope.com/unix/ufind.htm. <br />
 
 
 
