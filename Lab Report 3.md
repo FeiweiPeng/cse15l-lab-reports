@@ -1,7 +1,7 @@
 # Lab Report 3
 ## Researching Commands
-** I chose the find command, and the four options I chose are -name, -atime, -o, and -type.** <br />
-** -name ** <br />
+**I chose the find command, and the four options I chose are -name, -atime, -o, and -type.** <br />
+**-name** <br />
 1.First Example<br />
 The command and output are as follows: <br />
 ```
@@ -26,7 +26,7 @@ $ find ./technical/government/Gen_Account_Office/ -name "ai*.txt"
 ./technical/government/Gen_Account_Office//ai2132.txt
 ``` 
 This command finds all the txt files started with "ai..." in the ./technical/government/Gen_Account_Office/ directory. It is useful because it can sort the files in a folder with the specified name. <br /> Source: https://www.computerhope.com/unix/ufind.htm.<br />
-** -atime ** <br />
+**-atime** <br />
 1.First Example <br />
 The command and output are as follows: <br />
 ```
@@ -48,7 +48,7 @@ $ find . -atime -1h30m
 ./911.txt
 ```
 By typing "h", "m", and other time units, we can find files that were opened at the specific time slot. This command is finding the files in or below the current directory that were accessed less than one hour and thirty minutes ago. <br /> Source: https://www.computerhope.com/unix/ufind.htm.<br />
-** -o ** <br />
+**-o** <br />
 1.First Example <br />
 The command and output are as follows: <br />
 ```
@@ -77,7 +77,7 @@ $ find . -name "911.txt" -o -name "Session*.txt"
 ./911.txt
 ```
 First, we created a txt file called "911.txt". Then, we want to find the "911.txt" file and all the files start with "Session..." under current directory. This command can match files with several names at the same time. <br /> Source: https://www.computerhope.com/unix/ufind.htm. <br />
-** -type ** <br />
+**-type** <br />
 1.First Example <br />
 The command and output are as follows: <br />
 ``` 
