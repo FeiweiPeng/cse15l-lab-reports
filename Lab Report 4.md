@@ -7,4 +7,14 @@ Keys pressed: `Ctrl-R ssh <enter>`
 First, I pressed Ctrl-R to search the command history, and typed "ssh" so I can search the ssh commands with my username I used in the past. Then press enter to confirm the command, and I successfully logged into ieng6. <br />
 **Step 5:Clone** <br />
 Keys pressed: `git<space>clone<space>Ctrl-V<enter>`
+![Image](step5.jpg)
+I typed "git clone" and copied and pasted my SSH key(git@github.com:FeiweiPeng/lab7.git) of the lab7 repository from my github to the terminal. Then pressed enter to continue and this repository is cloned to ieng6. <br />
+**Step 6: Run the tests**<br />
+Keys pressed: `cd<space>lab7<enter>` `bash<space>test.sh<enter>`
+![Image](step6.jpg)
+First I typed "cd lab7" to move to lab7 directory, so I can run the tests. Then I typed "bash test.sh" to run the tests using the script that is already written with out typing the long commands. A failure occurred after running the test.<br />
+**Step 7: Edit the code**<br />
+Keys pressed: `vim<space>List<tab>.java<enter>` `/chan<enter>jllxi2<esc>:wq<enter>
+
+
 
