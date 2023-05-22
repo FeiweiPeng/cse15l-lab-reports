@@ -23,5 +23,25 @@ Keys pressed: `bash<space>test.sh<enter>`
 Back to the command line, type "bash test.sh" again to run the tests. There shouldn't be any failures as we just fixed the mistake.<br />
 **Step 9: Commit and push**<br />
 Keys pressed: `git<space>add<space>Shift-l ist<tab>.java<enter>` `git<space>commit<space>-m<space>Shift-" edited Shift-"<enter>` `git<space>push<enter>`
-
+![Image](step9.jpg)
+Type "git add" plus the name of the file we just edited, and type "git commit" with option "-m" to add the message "edited", then type "git push" to push the change to my repository. <br />
+**Summary**<br />
+1. Ctrl-R: search the history of commands used before.
+2. git clone: clone the repository.
+3. Ctrl-V: paste the text just copied.
+4. cd: change the current directory to the directory entered after this command.
+5. bash: run the shell scripts.
+6. vim: open vim.
+7. tab: autofill the rest of the line until there are multiple possibilities.
+8. /: enter search mode in vim.
+9. j: move cursor one line down.
+10. l: move cursor one character to the right.
+11. x: delete the character pointed by the cursor.
+12. i: enter insert mode in vim.
+13. escape: back to normal mode in vim.
+14. :w : save the changes in vim.
+15. :q : exit vim.
+16. git add:
+17. git commit -m:
+18. git push:
 
