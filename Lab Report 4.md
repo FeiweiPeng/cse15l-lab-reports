@@ -41,7 +41,7 @@ Type "git add" plus the name of the file we just edited, and type "git commit" w
 13. escape: back to normal mode in vim.
 14. :w : save the changes in vim.
 15. :q : exit vim.
-16. git add:
-17. git commit -m:
-18. git push:
+16. git add: add changes or new files to the staging area.
+17. git commit -m: commit the changes and add a message.
+18. git push: push the changes to repository
 
