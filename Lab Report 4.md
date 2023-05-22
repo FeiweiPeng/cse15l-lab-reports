@@ -19,5 +19,9 @@ Keys pressed: `vim<space>Shift-l ist<tab>.java<enter>` `/chan<enter>jllxi2<esc>:
 Type "vim" to edit the file in command line, then type "List" and tab to autofill the remaining characters, and type ".java" to finish the file name. In the vim, type "/" to enter the search mode, and search "chan" and enter to move cursor to word "change" in the comment line. Then type "jll" to move cursor to "1" after "index". Type "x" to delete the "1", type "i" to enter insert mode, then type "2" to correct the mistake. After that, use esc to back to normal mode, and type ":wq" to save and exit vim. Thus, the error in the code is fixed.<br />
 **Step 8: Run the tests**<br />
 Keys pressed: `bash<space>test.sh<enter>`
+![Image](step8.jpg)
+Back to the command line, type "bash test.sh" again to run the tests. There shouldn't be any failures as we just fixed the mistake.<br />
+**Step 9: Commit and push**<br />
+Keys pressed: `git<space>add<space>Shift-l ist<tab>.java<enter>` `git<space>commit<space>-m<space>Shift-" edited Shift-"<enter>` `git<space>push<enter>`
 
 
