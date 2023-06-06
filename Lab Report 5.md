@@ -20,7 +20,7 @@ So script only extracts the "1" of "12", showing the score as 1/1. The original 
 To fix the bug, I need to change the length of slicing so if can get the number of tests and failures correctly.<br />
 **Information about the setup**<br />
 **The file & directory structure:**<br />
-![Image](filestructure.png)
+![Image](filestructure1.png)
 **The content of grade1.sh before fixing:** <br />
 ```
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
@@ -240,3 +240,8 @@ class ListExamples {
   }
 }
 ```
+**The command line to trigger bug:**<br />
+`bash grade1.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
+**What to edit to fix the bug** <br />
+Change the code `PASSED=${RESULT_LINE:4:1}` to `PASSED=${RESULT_LINE:4:2}` and `TOTAL=${RESULT_LINE:11:1}` to `TOTAL=${RESULT_LINE:11:2}`. So the code after fixing should look like:
+![Image](after.png)
