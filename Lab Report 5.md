@@ -245,3 +245,5 @@ class ListExamples {
 **What to edit to fix the bug** <br />
 Change the code `PASSED=${RESULT_LINE:4:1}` to `PASSED=${RESULT_LINE:4:2}` and `TOTAL=${RESULT_LINE:11:1}` to `TOTAL=${RESULT_LINE:11:2}`. So the code after fixing should look like:
 ![Image](after.png)
+## Part 2: Reflection<br />
+I learned a lot about the script language and how to write a script. I didn't know what a script is before, so I was excited the first time I learned it. Although I think it's fun to write a script and use it to do many things, it can be very complicated when it comes to grading script, and I struggled a lot when I was writing it. Now I know how gradescope works and its working principles behind, which is super cool to me.
