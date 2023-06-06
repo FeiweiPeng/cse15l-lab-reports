@@ -11,3 +11,10 @@ I'm done with writing the grader script, but the score part always shows 1/1 eve
 The command I used is: "bash grade1.sh [Link](https://github.com/ucsd-cse15l-f22/list-methods-corrected)", the url is the repository containing my ListExamples.java. The script grade1.sh is the grader script provided by professor.<br />
 **Response From TA:**
 In this grader script, we use "grep" to extract the failure information and use the slicing of string to find the number of tests run and number of failures. In the original script, the slicing length is one, which is appropriate when you have single-digit number of tests. Thus, if you use more digit number of tests, the slicing length should change, too.
+
+**Finding the Bug**<br />
+I checked the failure counting part of the script, and realized that the script first finds the result line of JUnit, and then extract the number of tests and failures from that line. The slicing length was 1, but the result line of my tests was:
+![Image](resultline.png)
+So script only extracts the "1" of "12", showing the score as 1/1. The original script looks like:
+![Image](before.png)
+To fix the bug, I need to change the length of slicing so if can get the number of tests and failures correctly.
