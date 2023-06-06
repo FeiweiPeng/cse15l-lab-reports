@@ -14,13 +14,13 @@ In this grader script, we use "grep" to extract the failure information and use 
 
 **Finding the Bug**<br />
 I checked the failure counting part of the script, and realized that the script first finds the result line of JUnit, and then extract the number of tests and failures from that line. The slicing length was 1, but the result line of my tests was:<br />
-![Image](resultline.png)
+![Image](resultline.png)<br />
 So script only extracts the "1" of "12", showing the score as 1/1. The original script looks like:<br />
-![Image](before.png)
+![Image](before.png)<br />
 To fix the bug, I need to change the length of slicing so if can get the number of tests and failures correctly.<br />
 **Information about the setup**<br />
 **The file & directory structure:**<br />
-![Image](filestructure1.png)
+![Image](filestructure1.png)<br />
 **The content of grade1.sh before fixing:** <br />
 ```
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
@@ -244,6 +244,6 @@ class ListExamples {
 `bash grade1.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
 **What to edit to fix the bug** <br />
 Change the code `PASSED=${RESULT_LINE:4:1}` to `PASSED=${RESULT_LINE:4:2}` and `TOTAL=${RESULT_LINE:11:1}` to `TOTAL=${RESULT_LINE:11:2}`. So the code after fixing should look like:
-![Image](after.png)
+![Image](after.png)<br />
 ## Part 2: Reflection<br />
 I learned a lot about the script language and how to write a script. I didn't know what a script is before, so I was excited the first time I learned it. Although I think it's fun to write a script and use it to do many things, it can be very complicated when it comes to grading script, and I struggled a lot when I was writing it. Now I know how gradescope works and its working principles behind, which is super cool to me.
