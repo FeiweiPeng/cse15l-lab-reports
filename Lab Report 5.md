@@ -241,7 +241,7 @@ class ListExamples {
 }
 ```
 **The command line to trigger bug:**<br />
-`bash grade1.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
+`bash grade1.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`<br />
 **What to edit to fix the bug** <br />
 Change the code `PASSED=${RESULT_LINE:4:1}` to `PASSED=${RESULT_LINE:4:2}` and `TOTAL=${RESULT_LINE:11:1}` to `TOTAL=${RESULT_LINE:11:2}`. So the code after fixing should look like:
 ![Image](after.png)<br />
